@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="701.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="javawithmysql.controller.GranjaController">
+        <TableView fx:id="tableView" layoutX="15.0" layoutY="14.0" prefHeight="293.0" prefWidth="669.0">
+        <columns>
+            <TableColumn fx:id="GraCod" prefWidth="60.0" text="GraCod" />
+            <TableColumn fx:id="GraNom" prefWidth="124.0" text="GraNom" />
+            <TableColumn fx:id="GraDir" prefWidth="164.0" text="GraDir" />
+            <TableColumn fx:id="GraNot" maxWidth="500.0" prefWidth="178.0" text="GraNot" />
+            <TableColumn fx:id="GraEstReg" maxWidth="500.0" text="GraEstReg" />
+            <TableColumn fx:id="EmpCod" maxWidth="500.0" prefWidth="62.0" text="EmpCod" />
+        </columns>
+    </TableView>
+    <TextField fx:id="GraCodF" layoutX="49.0" layoutY="341.0" promptText="Codigo de la Granja" />
+    <TextField fx:id="GraDirF" layoutX="230.0" layoutY="341.0" prefHeight="26.0" prefWidth="241.0" promptText="Direccion de la Granja" />
+    <Button layoutX="199.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleInsert" text="Insertar" />
+    <Button layoutX="280.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleUpdate" text="Actualizar" />
+    <Button layoutX="376.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleDelete" text="Eliminar" />
+   <Button layoutX="461.0" layoutY="420.0" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+   <TextField fx:id="GraEstRegF" layoutX="490.0" layoutY="341.0" promptText="Registro Estado Granja" />
+   <TextField fx:id="GraNomF" layoutX="49.0" layoutY="379.0" promptText="Nombre de la Granja" />
+   <TextField fx:id="GraNotF" layoutX="230.0" layoutY="379.0" prefHeight="26.0" prefWidth="241.0" promptText="Notas de la Granja" />
+   <TextField fx:id="EmpCodF" layoutX="490.0" layoutY="379.0" promptText="Codigo de Empresa" />
+</AnchorPane>
